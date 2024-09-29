@@ -1,0 +1,10 @@
+.cl{
+    clear: both;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.cl input
+{
+    margin-bottom: 5px;
+}

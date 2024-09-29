@@ -1,0 +1,91 @@
+@import 'variables'
+@media screen and ( max-width : $small-device-width ) // Small devices (landscape phones, less than 768px)
+	.text-sm-center
+		text-align: center !important
+	.d-sm-block
+		display: block !important
+	.d-sm-none
+		display: none !important
+	.category-pic
+		min-height: auto !important
+		height: auto !important
+		border-radius: 0 !important
+	.home_cats_item
+		height: 120px
+		overflow: hidden
+		margin-bottom: 10px
+	@for $i from 1 through 5
+		.m-sm-t-#{$i}
+			margin-top: #{$i}rem
+		.m-sm-b-#{$i}
+			margin-bottom: #{$i}rem
+		.m-sm-r-#{$i}
+			margin-right: #{$i}rem
+		.m-sm-l-#{$i}
+			margin-left: #{$i}rem
+		.p-sm-t-#{$i}
+			padding-top: #{$i}rem
+		.p-sm-b-#{$i}
+			padding-bottom: #{$i}rem
+		.p-sm-r-#{$i}
+			padding-right: #{$i}rem
+		.p-sm-l-#{$i}
+			padding-left: #{$i}rem
+	@endfor
+@media screen and ( max-width : $medium-device-width ) // Medium devices (tablets, less than 992px)
+	.main-menu ul li
+		a
+			padding-right: 15px
+		ul
+			li
+				a
+					padding-right: 45px
+	.d-md-block,.d-sm-block
+		display: block !important
+	.d-md-none,.d-sm-none
+		display: none !important
+	header.version_1
+		.main_header
+			padding-top: 48px !important
+			right: 0
+			left: 0
+	@for $i from 1 through 5
+		.m-md-t-#{$i}
+			margin-top: #{$i}rem
+		.m-md-b-#{$i}
+			margin-bottom: #{$i}rem
+		.m-md-r-#{$i}
+			margin-right: #{$i}rem
+		.m-md-l-#{$i}
+			margin-left: #{$i}rem
+		.p-md-t-#{$i}
+			padding-top: #{$i}rem
+		.p-md-b-#{$i}
+			padding-bottom: #{$i}rem
+		.p-md-r-#{$i}
+			padding-right: #{$i}rem
+		.p-md-l-#{$i}
+			padding-left: #{$i}rem
+	@endfor
+
+@media screen and ( min-width: $large-device-width ) // Large devices (desktops, less than 1200px)
+	.d-md-block,.d-sm-block
+		display: inherit !important
+	@for $i from 1 through 5
+		.m-lg-t-#{$i}
+			margin-top: #{$i}rem
+		.m-lg-b-#{$i}
+			margin-bottom: #{$i}rem
+		.m-lg-r-#{$i}
+			margin-right: #{$i}rem
+		.m-lg-l-#{$i}
+			margin-left: #{$i}rem
+		.p-lg-t-#{$i}
+			padding-top: #{$i}rem
+		.p-lg-b-#{$i}
+			padding-bottom: #{$i}rem
+		.p-lg-r-#{$i}
+			padding-right: #{$i}rem
+		.p-lg-l-#{$i}
+			padding-left: #{$i}rem
+	@endfor

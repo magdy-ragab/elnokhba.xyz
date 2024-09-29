@@ -1,0 +1,304 @@
+$color1: #973056
+$color2: #5BD2C7
+.logo_area
+		img
+				max-height: 100px
+.single
+		color: #000
+		font-family: "Droid Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+
+input[type=range] 
+	-webkit-appearance: none
+	margin: 18px 0
+	width: 100%
+
+input[type=range]:focus 
+	outline: none
+
+input[type=range]::-webkit-slider-runnable-track 
+	width: 100%
+	height: 8.4px
+	cursor: pointer
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+	background: $color1
+	border-radius: 1.3px
+	border: 0.2px solid #010101
+
+input[type=range]::-webkit-slider-thumb 
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+	border: 1px solid #000000
+	height: 36px
+	width: 16px
+	border-radius: 3px
+	background: #ffffff
+	cursor: pointer
+	-webkit-appearance: none
+	margin-top: -14px
+
+input[type=range]:focus::-webkit-slider-runnable-track 
+	background: $color1
+
+input[type=range]::-moz-range-track 
+	width: 100%
+	height: 8.4px
+	cursor: pointer
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+	background: $color1
+	border-radius: 1.3px
+	border: 0.2px solid #010101
+
+input[type=range]::-moz-range-thumb 
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+	border: 1px solid #000000
+	height: 36px
+	width: 16px
+	border-radius: 3px
+	background: #ffffff
+	cursor: pointer
+
+input[type=range]::-ms-track 
+	width: 100%
+	height: 8.4px
+	cursor: pointer
+	background: transparent
+	border-color: transparent
+	border-width: 16px 0
+	color: transparent
+
+input[type=range]::-ms-fill-lower 
+	background: #2a6495
+	border: 0.2px solid #010101
+	border-radius: 2.6px
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+
+input[type=range]::-ms-fill-upper 
+	background: $color1
+	border: 0.2px solid #010101
+	border-radius: 2.6px
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+
+input[type=range]::-ms-thumb 
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+	border: 1px solid #000000
+	height: 36px
+	width: 16px
+	border-radius: 3px
+	background: #ffffff
+	cursor: pointer
+
+input[type=range]:focus::-ms-fill-lower 
+	background: $color1
+
+input[type=range]:focus::-ms-fill-upper 
+	background: $color1
+.bordered
+	border 1px solid #ccc
+.bold
+		font-weight: bold
+.single-sidebar-dr
+		li
+				a.active
+						color: $color1 !important
+.single-sidebar-vg
+		border-left: 1px solid #ccc
+
+#myTabContent
+		#home
+				display: block
+		.home-tab
+				display: none
+				&:first-child
+						display: block
+						
+.ov
+		overflow: hidden
+.single
+		.container
+				margin-top: 20px
+.home-cats
+		background-color: #f2f2f2
+		padding-bottom: 15px
+		.news_heading_2
+				h3
+						&:after
+								left: 0%
+								width: 0
+								content: ""
+.mt
+		margin-top: 15px
+.color1
+		color: $color1
+.color2
+		color: $color2
+.w3-border
+		border: 1px solid #ccc
+.home-cat-item
+		padding-right: 0
+		padding-left: 0
+		h4
+				margin-top: 20px
+.bg-secondary
+		background-color: #eee
+		margin-top: 15px
+		text-align: center
+		padding-top: 30px
+		padding-bottom: 30px
+		h1
+				color: $color1
+				font-family: "Droid Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+.product-item-2
+	border-left: 1px solid rgba(223, 223, 223, 0.75)
+	margin-top: -15px
+	border-bottom: 1px solid rgba(223, 223, 223, 0.75)
+	.product-title
+		margin: 10px
+		display: block
+	.sinle_pic, .product_content
+		border: 0px  none transparent
+	.all-pros-latest
+		border: 1px solid #fff
+		margin-bottom: 30px
+		padding-bottom: 30px
+	.main-price
+		font-size: 20px
+		color: $color1
+	.button_act , a.add_to_wishlist
+		padding: 5px 10px
+		border: 0px none transparent
+		background: transparent
+		font-size: 18px
+		border-radius: 50%
+		color: $color2
+		&:hover
+			background: #ccc
+			color: $color1
+		i
+			display: inline-block
+			position: relative
+			top: -4px
+	
+.product-item-2:hover
+	.all-pros-latest
+		animation: .5s grayBorder
+		border-radius: 5px
+		border: 1px solid #ccc
+@keyframes grayBorder
+	0%
+		border-color: #fff
+	100%
+		border-color: #ccc		
+
+.pagination
+	a
+		border-radius: 3px
+		margin: 2px
+	.active
+		a
+			background: $color1
+			color: white
+			border-color: #ccc
+
+.display-method-3
+	border: 1px solid #ccc
+	width: 98%
+	display: flex
+	flex-wrap: wrap
+.product-item-3
+	border: 1px solid #e6e6e6
+	padding-right: 0
+	padding-left: 0
+	overflow: hidden
+	display: flex
+	flex-direction: column
+	&:hover
+		background-color: #f3f3f3
+		border-color: #ccc
+	a
+		display: block
+		width: 100%
+	img
+		width: 100%
+		display: block
+	.product-title
+		display: block
+		margin-top: -15px
+		padding: 0 10px
+		font-size: 17px
+		color: #666
+		line-height: 20px
+		height: 45px
+		overflow: hidden
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+.price-code
+	background-color: #e6dc54
+	color: #000
+	display: inline-block
+	font-weight: 700
+	min-width: 25%
+	text-align: center
+	line-height: 30px
+	opacity: .9
+	position: relative
+	top: -80px
+.price-stars
+	display: flex
+	width: 100%
+	padding: 0 10px
+	.main-price
+		color: $color1
+	i.fa
+		color: 16px
+	span
+		flex: 1 1 50%
+		font-size: 17px
+		&:last-child
+			font-size: 13px
+			text-align: left
+	del
+		color: #666
+		font-size: 13px
+.product-item-3__main
+	display: flex
+	flex: 1 1 100%
+.cart-wish
+	display: flex
+	width: 100%
+	flex: 1 1 100%
+	padding: 0 10px
+	margin-bottom: 15px
+	align-content: space-between
+	a
+		text-align: center
+		display: flex
+		justify-content: center
+		align-items: center
+		align-content: center
+		font-size: 18px !important
+		margin-left: 2%
+		border-color: transparet  !important
+	.wish-container
+		display: flex
+		flex: 0 0 29%
+		opacity: 1
+		transform: scale(100%) !important
+		color: $color1 !important
+		&:hover
+			.fa
+				color: #FFF
+	.cart-container
+		display: flex
+		flex: 0 0 69%
+.product-item-4
+	display: flex
+	width: 100%
+	border-bottom: 1px solid #dfdfdf
+	.product-title
+		flex: 1 1 55%
+	div
+		flex: 0 0 15%
+	.wish-container a, .cart-container a
+		color: $color1
+		font-size: 15px
+		&:hover
+			color: $color2 !important

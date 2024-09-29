@@ -1,0 +1,46 @@
+//----------------- COLOR WHEEL ---------------//
+$red_color: #661511;
+$green_color: #11661c;
+$blue_color: #111766;
+$teal_color: #116662;
+$brown_color: #666511;
+$fushia_color: #66115b;
+$love_color: #551166;
+$brown2_color: #b49432;
+$gray_color: #333333;
+//----------------- Main color ---------------//
+$main_color: $gray_color;
+//-------------------- Base Colors --------------------//
+$body-color: #f8f8f8;
+$body-text-color: #444;
+$body-text-color-2: greyscal( $main_color);
+$heading-color: #111;
+$color-1: $main_color;
+$color-2: blue( $main_color);
+$color-3: green( $main_color);
+$color-4: $main_color;
+$color-5: lighten( $main_color, 3);
+$color-6: yellow( $main_color);
+$color-7: lighten( $main_color, 10);
+$color-8: #fdfaf1;
+$border-color-1: #ededed;
+$border-color-2: #dddddd;
+$bg-color-1: #f4f4f4;
+$bg-color-2: #f8f8f8;
+$bg-color-3: #f9f9f9;
+//-------------------- Line Height Variables --------------------//
+$line-height-base: 1.5;
+$line-height-large: 1.8;
+$line-height-none: 1;
+//-------------------- Font Families --------------------//
+$font-main: 'droid',
+Arial,
+Helvetica,
+sans-serif;
+//-------------------- Font Sizes --------------------//
+$font-size-base: 0.875rem;
+//-------------------- Responsive sizes -------------------- //
+$large-device-width: 1199px; // Large devices (desktops, less than 1200px)
+$medium-device-width: 991px; // Medium devices (tablets, less than 992px)
+$small-device-width: 767px; // Small devices (landscape phones, less than 768px)
+$extra-small-device-width: 575px; // Extra small devices (portrait phones, less than 576px)

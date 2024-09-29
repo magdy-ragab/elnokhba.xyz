@@ -1,0 +1,112 @@
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus
+{
+    outline: 0;
+}
+
+#registr .form-error
+{
+    display: block;
+    margin-top: -16px;
+    text-align: right;
+    color: darkred;
+    margin-bottom: 15px;
+    font-family: Tahoma;
+    font-weight: normal;
+    font-size: 11px;
+    margin-right: 5px;
+    position: absolute;
+}
+
+
+.blog-main-slider p
+{
+    font-family: Tahoma;
+}
+
+
+/** notifications **/
+.notify {
+  display: block;
+  background: #fff;
+  padding: 12px 18px;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+}
+
+.notify h1 { margin-bottom: 6px; }
+
+.successbox h1 { color: #678361; }
+.errorbox h1 { color: #6f423b; }
+
+.successbox h1:before, .successbox h1:after { background: #cad8a9; }
+.errorbox h1:before, .errorbox h1:after { background: #d6b8b7; }
+
+.notify .alerticon { 
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.emtpy_cart
+{
+    text-align: center;
+    font-size: 18pt;
+    color: #6A6969;
+}
+
+.flash_message
+{
+    color: #FF8C00;
+    font-size: 10px;
+    text-align: right;
+    font-weight: normal !important;
+    display: block;
+}
+
+.push-right{float: right;}
+.text-muted{color:darkgray;}
+.colorTable{display: inline-block;  width: 20px; height: 10px; margin: 0 5px;}
+
+.comment-reply{margin-right: 50px;}
+
+
+
+.quickviewTabs,.qv-panel
+{
+    color: #fff;
+}
+
+.qv-panel .btn-xs
+{
+    padding: 1px 10px !important;
+    border-radius: 5px;
+    width: inherit !important;
+}
+
+
+.mytable{border:1px solid #ddd;}
+.mytable th{ background-color: #00aced; color: #FFF; text-align: right;}
+.add-product-form label{float: right;color:#000; font-family: tahoma;}
+select[multiple]{height: 100px;}
+.hiddenElement{display:none;}
+.row .form-group input,
+.row .form-group select,
+.row .form-group textarea,
+.row .form-group .btn
+{
+    margin-bottom: 15px;
+}
+.help-block.form-error{color:#F00; margin-right: 10px; font-size:12px; }
+.datepicker{position: absolute; background-color: #FFF;border:1px solid #bfbfbf;}
+#qvt-user{font-family: Tahoma;}
+hr{margin-top: 30px;}
+.text-danger{color:#A94442 !important;}
+del{color:red;}
+.img-bordered{border:1px solid #bfbfbf;}

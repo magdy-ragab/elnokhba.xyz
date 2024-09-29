@@ -1,0 +1,173 @@
+<div id="body-content" class="has-header-fixed">
+	<div id="main-content">
+		<div class="main-content">
+			<div id="home-main-content" class="">
+				<!-- BEGIN content_for_index -->
+				<div id="shopify-section-1532421406028" class="shopify-section">
+					<div
+            class="section-separator section-separator-1532421406028 section-separator-margin-top">
+					</div>
+				</div>
+				<div id="shopify-section-1554699267962" class="shopify-section">
+					<div class="slideshow-01 slideshow-catalog-wrapper sidebar-banner">
+						<div class="bc-wrapper fix-height boxed">
+							<div class="bc-home-slideshow">
+								<div class="owl-carousel" id="home-slider">
+									<?php foreach( $this->core_model->sliders() as $slider ) { ?>
+									<div>
+										<img src="<?=base_url("uploads/slider/{$slider->pic}")?>" class="img-fluid">
+									</div><!-- / .owl-item -->
+									<?php }?>
+								</div><!-- / #home-slider.owl-carousel -->
+							</div>
+
+							<div class="bc-three-banner style-2">
+								<div class="bc-item">
+									<div class="bc-item-inner">
+										<div class="bc-item-left">
+											<a href="">
+												<img src="<?= base_url('theme/') ?>//photo_2018-12-27_20-50-46_140x.webp" alt="Banner">
+											</a>
+										</div>
+										<div class="bc-item-body">
+											<div class="bc-item-text"><a href="">لمسات<br><strong>مميزة</strong> <br>للمطبخ</a></div>
+											<a class="bc-item-" href="">تسوق الآن</a>
+										</div>
+									</div>
+								</div>
+								<div class="bc-item">
+									<div class="bc-item-inner">
+										<div class="bc-item-left">
+											<a href="">
+												<img src="<?= base_url('theme/') ?>//12985405_1787952708101952_2424608541949703568_n_140x.webp"
+													alt="Banner">
+											</a>
+										</div>
+										<div class="bc-item-body">
+											<div class="bc-item-text"><a href="">كن<br><strong>مختلفاً</strong><br>ببساطة</a></div>
+											<a class="bc-item-" href="">تسوق الآن</a>
+										</div>
+									</div>
+								</div>
+								<div class="bc-item">
+									<div class="bc-item-inner">
+										<div class="bc-item-left">
+											<a href="">
+												<img src="<?= base_url('theme/') ?>//1_-_Copy_140x.webp" alt="Banner">
+											</a>
+										</div>
+										<div class="bc-item-body">
+											<div class="bc-item-text"><a href=""><br> منتجات طفلك<br><strong>والمزيد</strong></a>
+											</div>
+											<a class="bc-item-" href=""><span class="upto"><span class="prefix">Up to</span><span
+														class="value">30</span><span class="suffix">%</span></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="shopify-section-1557734952477" class="shopify-section">
+					<div role="tabpanel" id="hp-tabs-1557734952477"
+						class="hp-tabs-section layout-boxed tab-style-v1 heading-false" >
+						<div class="container">
+							<div class="wrap-tab-content">
+								<div class="nav-tab-wrapper fix-size">
+									<ul class="nav nav-tabs tab-heading tab-heading-1 align-left" role="tablist">
+										<li class="tab-title nav-item">
+											<a class="nav-link active " href="#hp-tabs-1557734952477-1"
+												aria-controls="hp-tabs-1557734952477-1" role="tab" data-toggle="tab">
+												مميز
+											</a>
+										</li>
+										<li class="tab-title nav-item">
+											<a class="nav-link" href="#hp-tabs-1557734952477-2" aria-controls="hp-tabs-1557734952477-2"
+												role="tab" data-toggle="tab">
+												عروض
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-content">
+									<div role="tabpanel" class="show active tab-pane" id="hp-tabs-1557734952477-1">
+										<div class="">
+											<div class="owl-carousel owl-2 owl-theme">
+                            <?php
+                            foreach( $stared as $row ) {
+                              $this->load->view("includes/product-item", ["row"=>$row]);
+                            }?>
+
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="hp-tabs-1557734952477-2">
+										<div class="">
+											<div class="owl-carousel owl-2 owl-theme">
+                      <?php
+                            foreach( $last as $row ) {
+                              $this->load->view("includes/product-item", ["row"=>$row]);
+                            }?>
+											</div>
+										</div>
+									</div>
+
+                </div>
+								<script>
+
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="options-section" class="shopify-section">
+						<div class="container">
+											<div class="item">
+													<div class="image">
+														<span class="image-lazysize" >
+																<img class=""
+																	src="http://cdn.shopify.com/s/files/1/0039/1938/0553/files/icon_1_45x35.png?v=1588167802"
+																	alt="" />
+														</span>
+													</div>
+													<div class="text">
+														<h6>التوصيل للبيت</h6>
+													</div>
+											</div>
+											<div class="item" >
+
+													<div class="image">
+														<span class="image-lazysize" >
+																<img class=""
+																	src="http://cdn.shopify.com/s/files/1/0039/1938/0553/files/icon_1_45x35.png?v=1588167802"
+																	alt="" />
+														</span>
+													</div>
+													<div class="text">
+														<h6>لكل المحافظات</h6>
+													</div>
+
+											</div>
+											<div class="item" >
+
+													<div class="image">
+														<span class="image-lazysize" >
+															<!-- noscript pattern -->
+
+																<img class=""
+																	src="http://cdn.shopify.com/s/files/1/0039/1938/0553/files/icon_1_45x35.png?v=1588167802"
+																	alt="" />
+
+														</span>
+													</div>
+													<div class="text">
+														<h6>الدفع عند الاستلام</h6>
+													</div>
+
+											</div>
+						</div>
+				</div><!-- END content_for_index -->
+			</div>
+		</div>
+	</div>
+</div>

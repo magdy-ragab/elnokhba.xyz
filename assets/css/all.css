@@ -1,0 +1,76 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+body
+{
+	font-family: 'Droid Arabic Naskh', Tahoma ,serif;
+}
+
+#login-panel
+{
+	margin-top: 30px;
+}
+
+.panel-footer
+{
+	overflow: hidden;
+}
+
+.mt30
+{
+	margin-top:30px;
+}
+
+
+.mauto
+{
+	margin:auto;
+}
+
+.form-control-feedback
+{
+	left: 11px;
+	color: #999;
+}
+
+#login-submit
+{
+	font-family: Tahoma;
+	font-size:11px;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+@media only screen and (max-width : 768px) {
+	.col-xs-mt10
+	{
+		margin-top: 10px;
+	}
+	.col-xs-mt20
+	{
+		margin-top: 20px;
+	}
+	
+	#login-submit
+	{
+		height: inherit;
+		line-height: inherit;
+		font-weight: inherit;
+	}
+
+
+}

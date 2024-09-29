@@ -1,0 +1,231 @@
+/* control panel */
+
+body,
+td,
+th,
+span,
+div {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+* {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+
+/* right menu */
+
+#nav-right-ul li a {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#right-nev a span.glyphicon {
+    margin-left: 15px;
+}
+
+#nav-right-ul span.label {
+    padding: 0px 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+#right-nev a {
+    color: #fff;
+}
+
+#nav-right-ul li ul li a {
+    padding-right: 30px;
+    font-size: 12px;
+    border-bottom: 1px solid #222d32;
+}
+
+#right-nev a:hover {
+    background-color: rgba(236, 240, 245, 0.41);
+}
+
+#right-nev a span.glyphicon {
+    color: rgba(243, 243, 243, 0.70);
+}
+
+#left-header {
+    background-color: #3399FF;
+}
+
+#header-right {
+    background-color: #3399FF;
+    height: 34px;
+}
+
+#right-nev a:hover,
+#right-nev li.active a {
+    border-right: 5px solid #3399ff;
+    border-left: 5px solid #3399ff;
+}
+
+
+/* main page */
+
+.index_buttons .btn {
+    padding: 5px 15px;
+}
+
+.index_buttons .btn .glyphicon {
+    margin-left: 5px;
+}
+
+.btn-primary {
+    background-color: #3399ff;
+    border: 0px solid #fff;
+}
+
+.btn-info {
+    border: 0px solid #fff;
+}
+
+.btn-success {
+    border: 0px solid #fff;
+}
+
+.btn-warning {
+    border: 0px solid #fff;
+}
+
+.btn-danger {
+    border: 0px solid #fff;
+}
+
+#new-messages-bar .label {
+    font-size: 10px;
+    padding: 1px 2px;
+    top: 18px;
+    right: -9px;
+}
+
+
+/* forms */
+
+input[type=text].form-control,
+input[type=file].form-control,
+input[type=date].form-control,
+select.form-control,
+textarea.form-control {
+    border: 2px solid #ddd;
+    ;
+    border-bottom: 2px solid #ddd;
+    ;
+}
+
+input[type=text].form-control:hover,
+input[type=text].form-control:focus,
+input[type=file].form-control:hover,
+input[type=file].form-control:focus,
+input[type=date].form-control:hover,
+input[type=date].form-control:focus,
+select.form-control:hover,
+select.form-control:focus,
+textarea.form-control:hover,
+textarea.form-control:focus {
+    border: 1px solid #5b9dd9;
+    ;
+    border-bottom: 1px solid #5b9dd9;
+    ;
+    box-shadow: 0 0 2px rgba(30, 140, 190, .8);
+}
+
+.has-error .form-control {
+    box-shadow: 0 0 2px rgba(169, 68, 66, 0.4);
+}
+
+.dropdown-menu>li>a {
+    padding: 10px 20px;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    color: #ffffff;
+    background-color: #3399ff;
+}
+
+
+/* login page */
+
+.login-page {
+    background-image: url(../img/Blue-background.jpg);
+    height: 100vh;
+    padding-top: 8%;
+}
+
+.loging-form {}
+
+img.mauto.img-responsive {
+    border-radius: 50%;
+}
+
+.panel {
+    background-color: rgba(255, 255, 255, 0.29);
+    border: 1px solid transparent;
+}
+
+#login-panel .panel-default>.panel-heading {
+    color: #fff;
+    background-color: rgba(245, 245, 245, 0.23);
+}
+
+.panel-footer {
+    padding: 10px 15px;
+    background-color: rgba(245, 245, 245, 0.22);
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#login-panel .panel-body {
+    color: #fff;
+}
+
+.panel-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.powered kbd {
+    background-color: rgba(51, 51, 51, 0.58);
+    padding: 10px 10px;
+}
+
+.panel-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.panel-footer a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.popover-content {
+    direction: ltr;
+}
+
+.btn.btn-info.iconpicker {
+    direction: ltr;
+}
+
+.btn.btn-info.iconpicker i {
+    color: #d8ecff;
+    font-size: 20px;
+}
+
+.category_icon {
+    border-radius: 5px;
+    background-color: gray;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    color: #eae6e6;
+    padding: 2px;
+}
