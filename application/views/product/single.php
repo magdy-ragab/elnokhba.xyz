@@ -132,9 +132,9 @@ if (!$single['ID']) {
 				</div><!-- / .col -->
 			</div><!-- ./ row -->
 			<p><?php echo nl2br($single['content']); ?></p>
-			<a href="tel:966592951043"
+			<a href="tel:966574474837"
 				class="btn-cart fa fa-phone"></a>
-			<a href="https://wa.me/966592951043"
+			<a href="https://wa.me/966574474837"
 				class="btn-cart fa fa-whatsapp"></a>
 		</div><!-- ./ co-lg-6 -->
 		<?php if ($single['full_content']) { ?>

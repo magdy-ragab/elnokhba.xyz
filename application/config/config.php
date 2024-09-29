@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = (strpos($_SERVER['SERVER_NAME'], 'localhost') !== false) ? 'http://localhost/elnokhba.xyz/' : 'http://elnokhba.xyz/';
+$config['base_url'] = (strpos($_SERVER['SERVER_NAME'], 'localhost') !== false) ? 'http://localhost/elnokhba.xyz/' : 'https://elnokhba.xyz/';
 
 /*
 |--------------------------------------------------------------------------

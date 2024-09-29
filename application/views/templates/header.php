@@ -75,33 +75,15 @@ $theme_color=$this->core_model->get_settings("color_theme");
 		<div class="layer"></div><!-- Mobile menu overlay mask -->
 		<div id="header_1">
 			<div class="row">
-				<div class="col-6">
-					<span class="d-block d-md-inline d-lg-inline text-sm-center">
-						الرقم الاساسي
-					</span><!-- / .d-dm-block -->
-					<span class="d-block d-md-inline d-lg-inline text-sm-center">
-						<a href="tel:966592951043" class="d-sm-block d-md-block text-sm-center">
-							<span class="fa fa-phone"></span>
-							966592951043
-						</a>
-						<a href="https://wa.me/966592951043" class="d-sm-block d-md-block text-sm-center">
-							<span class="fa fa-whatsapp"></span>
-							966592951043
-						</a>
-					</span>
-				</div><!-- / .col-6 -->
+				<div class="col-6"></div><!-- / .col-6 -->
 				<div class="col-6 text-left">
 					<span class="d-block d-md-inline d-lg-inline text-sm-center">
-						رقم المشاريع
+						 اتصل بنا
 					</span>
 					<span class="d-block d-md-inline d-lg-inline text-sm-center">
-						<a href="tel:966575420360" class="d-sm-block d-md-block text-sm-center">
+						<a href="tel:966574474837" class="d-sm-block d-md-block text-sm-center">
 							<span class="fa fa-phone"></span>
-							966575420360
-						</a>
-						<a href="https://wa.me/966592951043" class="d-sm-block d-md-block text-sm-center">
-							<span class="fa fa-whatsapp"></span>
-							966592951043
+							966574474837
 						</a>
 					</span>
 				</div><!-- / .col-6 -->
@@ -119,8 +101,7 @@ $theme_color=$this->core_model->get_settings("color_theme");
 						<img
 							class="m-md-t-1"
 							alt="<?=$this->core_model->get_settings('title');?>"
-							width="180"
-							height="66"
+							width="90"
 							loading=lazy
 							src="<?=base_url("theme/logo.png")?>">
 					</a>
@@ -154,8 +135,7 @@ $theme_color=$this->core_model->get_settings("color_theme");
 								<a href="<?=base_url()?>">
 									<img src="<?=base_url("theme/logo.png")?>"
 										alt="<?php echo $this->core_model->get_settings('title')?>"
-										width="100"
-										height="35">
+										width="90" />
 									</a>
 								<a href="#" class="open_close" id="close_in"><i class="ti-close"></i></a>
 							</div>
@@ -179,16 +159,16 @@ $theme_color=$this->core_model->get_settings("color_theme");
 						<nav class="categories">
 							<ul class="clearfix">
 								<li><span>
-										<a href="tel:966592951043">
+										<a href="tel:966574474837">
 											<span class="fa fa-phone"></span>
-											966592951043
+											966574474837
 										</a>
 									</span>
 								</li>
 								<li><span>
-										<a href="https://wa.me/966592951043">
+										<a href="https://wa.me/966574474837">
 											<span class="fa fa-whatsapp"></span>
-											966592951043
+											966574474837
 										</a>
 									</span>
 								</li>

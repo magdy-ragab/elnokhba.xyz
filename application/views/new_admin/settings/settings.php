@@ -141,7 +141,7 @@
 										id="color_theme_brown"
 										value="brown">
 										<span class="theme_color_select"
-											style="background-color:#666511"></span>
+											style="background-color:#2C838D"></span>
 								</label>
 							</div><!-- / col-sm-4 -->
 							<div class="col-sm-4">
@@ -221,7 +221,7 @@
 				</div>
 			</div>
 
-			<? /* <div class="row">
+			<?php /* <div class="row">
 				<div class="form-group">
 					<label for="display-method">طريقة عرض المنتجات</label>
 					<select name="display_method" id="display_method" class="form-control">

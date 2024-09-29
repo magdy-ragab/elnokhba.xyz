@@ -15,7 +15,7 @@
 							loading=lazy>
 					</a></div>
 					<div class="text-center">
-						الرياض للمفروشات
+						النخبة للمفروشات
 					</div>
 				</div><!-- / .col-md-6 col-lg-3 -->
 				<div class="col-md-6 col-lg-3">
@@ -32,26 +32,11 @@
 						<ul>
 							<li class="text-bold">الرقم الاساسي</li>
 							<li>
-								<a href="https://wa.me/966592951043">
-									<span class="fa fa-whatsapp"></span> 966592951043
+								<a href="https://wa.me/966574474837">
+									<span class="fa fa-whatsapp"></span> 966574474837
 								</a>
 							</li>
-							<li>
-								<a href="tel:966510087865">
-									<span class="fa fa-phone"></span> 966510087865
-								</a>
-							</li>
-							<li class="text-bold">رقم المشاريع</li>
-							<li>
-								<a href="https://wa.me/966592951043">
-									<span class="fa fa-whatsapp"></span> 966592951043
-								</a>
-							</li>
-							<li>
-								<a href="tel:966592951043">
-									<span class="fa fa-phone"></span> 966592951043
-								</a>
-							</li>
+							
 						</ul>
 					</div>
 				</div><!-- ./ col-md-6 col-lg-3 -->
@@ -91,38 +76,18 @@
 				<span class="fa fa-close"></span>
 			</div>
 			<div class="whatsapp-col">
-				<a href="https://wa.me/966592951043">
+				<a href="https://wa.me/966574474837">
 					<img
 						src="<?=base_url("theme/icons/whatsapp.png")?>"
 						alt="whatsapp"
 						width="64"
 						height="68"
 						loading=lazy>
-					<span>966592951043</span>
+					<span>966574474837</span>
 				</a>
 			</div><!-- / .whatsapp-col -->
-			<div class="whatsapp-col">
-				<a href="https://wa.me/966510087865">
-					<img
-						src="<?=base_url("theme/icons/whatsapp.png")?>"
-						alt="whatsapp"
-						width="64"
-						height="68"
-						loading=lazy>
-					<span>966510087865</span>
-				</a>
-			</div><!-- / .whatsapp-col -->
-			<div class="whatsapp-col">
-				<a href="https://wa.me/966575420360">
-					<img
-						src="<?=base_url("theme/icons/whatsapp.png")?>"
-						alt="whatsapp"
-						width="64"
-						height="68"
-						loading=lazy>
-					<span>0575420360</span>
-				</a>
-			</div><!-- / .whatsapp-col -->
+			<!-- / .whatsapp-col -->
+			<!-- / .whatsapp-col -->
 		</div><!-- / .whatsapp-row -->
 		<div class="whatsapp-menu">
 			<img

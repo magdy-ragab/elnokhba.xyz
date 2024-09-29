@@ -30,10 +30,10 @@
 				?>
 			</div>
 			<div class="call-us-products">
-				<a href="tel:966592951043"
+				<a href="tel:966574474837"
 					class="btn btn-sm btn-primary fa fa-phone"></a>
 				&nbsp;
-				<a href="https://wa.me/966592951043"
+				<a href="https://wa.me/966574474837"
 					class="btn btn-sm btn-primary fa fa-whatsapp"></a>
 			</div>
 		</div>

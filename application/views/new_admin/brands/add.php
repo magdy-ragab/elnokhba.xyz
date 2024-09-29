@@ -96,8 +96,8 @@ if($edit){
 				<div class="form-group">
 					<label for="active" class="col-md-3">تفعيل ؟</label>
 					<select class="form-control col-md-9" name="active" id="active">
-						<option value="Y"<? if($row['active']=='Y') echo ' selected'; ?>>نعم</option>
-						<option value="N"<? if($row['active']=='N') echo ' selected'; ?>>لا</option>
+						<option value="Y"<?php if($row['active']=='Y') echo ' selected'; ?>>نعم</option>
+						<option value="N"<?php if($row['active']=='N') echo ' selected'; ?>>لا</option>
 					</select>
 				</div>
 			</div><?php }?>

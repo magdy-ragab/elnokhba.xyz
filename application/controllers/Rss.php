@@ -18,13 +18,13 @@ class Rss extends CI_Controller {
 		     <title><?php echo $this->core_model->get_settings('title'); ?></title>
 		     <link><?php echo base_url()?></link>
 		   </image>
-		   <? foreach($this->db->order_by("ID","desc")->get_where("pages", "active='Y' and `module`<>'gallery'")->result() as $r){ ?>
+		   <?php foreach($this->db->order_by("ID","desc")->get_where("pages", "active='Y' and `module`<>'gallery'")->result() as $r){ ?>
 		   <item>
 		     <title><?php echo $r->title?></title>
 		     <link><?php echo base_url() .$r->module."/{$r->ID}"; ?></link>
 		     <description><?php echo  mb_substr(strip_tags( $r->content), 0, 255, "utf-8");?></description>
 		   </item>
-		   <? }?>
+		   <?php }?>
 		 </channel>
 		</rss>
 	<?php }

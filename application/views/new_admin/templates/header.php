@@ -17,15 +17,15 @@ if (!$this->session->userdata('user')) {
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.css" />
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap-rtl.min.css" />
-	<link rel="stylesheet" type="text/css" href="<? echo base_url(); ?>assets/css/admin.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/admin.css" />
 
 	<!-- jQuery library -->
-	<script src="<? echo base_url(); ?>assets/js/jquery-1.10.2.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/jquery-1.10.2.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="<? echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 	<script src="<?= base_url("assets/js/swipe.js") ?>"></script>
-	<script src="<? echo base_url(); ?>assets/js/jquery.form-validator.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/jquery.form-validator.min.js"></script>
 	<script>
 		var _report_upload_error = 1;
 		var base_url = '<?= base_url() ?>';
@@ -46,8 +46,8 @@ if (!$this->session->userdata('user')) {
 			}
 		}
 	</script>
-	<script src="<? echo base_url(); ?>assets/js/admin/admin_panel.js"></script>
-	<script src="<? echo base_url(); ?>assets/js/admin/admin.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/admin/admin_panel.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/admin/admin.js"></script>
 	<?php if ($cont == 'admin_index') { ?>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<?php } ?>

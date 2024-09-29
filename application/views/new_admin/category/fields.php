@@ -89,13 +89,13 @@ if($edit){
 				<div class="form-group">
 					<label for="input_type" class="col-md-3">نوع الحقل</label>
 					<select class="form-control col-md-9" name="input_type" id="input_type" data-validation="required" data-validation-error-msg="نوع الحقل مطلوب">
-                       <option value="text"<? if($row['input_type']== 'text') echo ' selected';?>>مربع نصي</option>
-                       <option value="textarea"<? if($row['input_type']== 'textarea') echo ' selected';?>>مربع نصي كبير</option>
-                       <!-- <option value="editor"<? if($row['input_type']== 'editor') echo ' selected';?>>محرر كامل (لوحة التحكم فقط)</option> -->
-                       <option value="numbers"<? if($row['input_type']== 'numbers') echo ' selected';?>>ارقام فقط</option>
-                       <!-- <option value="pic"<? if($row['input_type']== 'pic') echo ' selected';?>>صورة</option> -->
-                       <option value="date"<? if($row['input_type']== 'date') echo ' selected';?>>تاريخ</option>
-                       <option value="color"<? if($row['input_type']== 'color') echo ' selected';?>>تحديد لون</option>
+                       <option value="text"<?php if($row['input_type']== 'text') echo ' selected';?>>مربع نصي</option>
+                       <option value="textarea"<?php if($row['input_type']== 'textarea') echo ' selected';?>>مربع نصي كبير</option>
+                       <!-- <option value="editor"<?php if($row['input_type']== 'editor') echo ' selected';?>>محرر كامل (لوحة التحكم فقط)</option> -->
+                       <option value="numbers"<?php if($row['input_type']== 'numbers') echo ' selected';?>>ارقام فقط</option>
+                       <!-- <option value="pic"<?php if($row['input_type']== 'pic') echo ' selected';?>>صورة</option> -->
+                       <option value="date"<?php if($row['input_type']== 'date') echo ' selected';?>>تاريخ</option>
+                       <option value="color"<?php if($row['input_type']== 'color') echo ' selected';?>>تحديد لون</option>
                     </select>
 				</div>
 			</div>
@@ -112,8 +112,8 @@ if($edit){
 				<div class="form-group">
 					<label for="searchable" class="col-md-3">تضمين في البحث ؟</label>
 					<select class="form-control col-md-9" name="searchable" id="searchable">
-						<option value="N"<? if($row['searchable']== 'N') echo ' selected';?>>لا</option>
-						<option value="Y"<? if($row['searchable']== 'Y') echo ' selected';?>>نعم</option>
+						<option value="N"<?php if($row['searchable']== 'N') echo ' selected';?>>لا</option>
+						<option value="Y"<?php if($row['searchable']== 'Y') echo ' selected';?>>نعم</option>
 					</select>
 				</div>
 			</div>
@@ -122,8 +122,8 @@ if($edit){
 				<div class="form-group">
 					<label for="input_required" class="col-md-3">حقل إجباري؟</label>
 					<select class="form-control col-md-9" name="input_required" id="input_required">
-						<option value="N"<? if($row['input_required']== 'N') echo ' selected';?>>لا</option>
-						<option value="Y"<? if($row['input_required']== 'Y') echo ' selected';?>>نعم</option>
+						<option value="N"<?php if($row['input_required']== 'N') echo ' selected';?>>لا</option>
+						<option value="Y"<?php if($row['input_required']== 'Y') echo ' selected';?>>نعم</option>
 					</select>
 				</div>
 			</div>
@@ -157,14 +157,14 @@ if($edit){
 			<!--<div class="row fieldOption date-v">
 				<div class="form-group">
 					<label for="no_prev_date" class="col-md-3">لاتقبل تاريخاً سابق لليوم</label>
-					 <div class="col-md-9"><input type="checkbox" name="no_prev_date" id="no_prev_date" value="Y"<? if($row['no_prev_date']== 'Y') echo ' checked';?> /></div>
+					 <div class="col-md-9"><input type="checkbox" name="no_prev_date" id="no_prev_date" value="Y"<?php if($row['no_prev_date']== 'Y') echo ' checked';?> /></div>
 				</div>
 			</div>-->
 			
 			<div class="row fieldOption color-v">
 				<div class="form-group">
 					<label for="multi_color" class="col-md-3">إمكانية تحديد أكثر من لون</label>
-					 <div class="col-md-9"><input type="checkbox" name="multi_color" id="multi_color" value="Y"<? if($row['multi_color']== 'Y') echo ' checked';?> /></div>
+					 <div class="col-md-9"><input type="checkbox" name="multi_color" id="multi_color" value="Y"<?php if($row['multi_color']== 'Y') echo ' checked';?> /></div>
 				</div>
 			</div>
 			
@@ -276,7 +276,7 @@ function getFieldProperties()
       </div>
       <div class="modal-footer">
       	<div class="col-xs-6 text-right">
-      		<button type="button" id="delAction" data-url="<? echo base_url()."new_admin/category/del_field/{$row->ID}" ?>" class="btn btn-danger">حذف</button>
+      		<button type="button" id="delAction" data-url="<?php echo base_url()."new_admin/category/del_field/{$row->ID}" ?>" class="btn btn-danger">حذف</button>
       	</div>
       	<div class="col-xs-6">
 	        <button type="button" class="btn btn-info" data-dismiss="modal">عودة</button>

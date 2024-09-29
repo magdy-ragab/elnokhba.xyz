@@ -55,7 +55,7 @@
 
 
 
-<? /*<div class="">
+<?php /*<div class="">
         <div class="mywidget">
            <div class="widget_header">
                 <div class="col-xs-12"><h3>الإحصائيات</h3></div>
