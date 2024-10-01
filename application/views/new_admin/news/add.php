@@ -3,7 +3,7 @@
 	<div class="col-md-10">
 		<ul class="breadcrumb">
 			<li><a href="<?php echo $admin_dir?>/admin_index">الرئيسية</a></li>
-			<li>إضافة خبر</li>
+			<li>إضافة موضوع</li>
 		</ul>
 	</div>
 	<div class="col-md-2 hidden-xs">
@@ -59,38 +59,38 @@ if($edit){
 			{
 				echo '<div class="alert alert-danger fade in">
 				<a href="#" data-dismiss="alert" class="close" rel="close">&times;</a>
-				هذا الخبر موجود من قبل</div>';
+				هذا الموضوع موجود من قبل</div>';
 			}
 			if($inserted)
 			{
 				echo '<div class="alert alert-success fade in">
 				<a href="#" data-dismiss="alert" class="close" rel="close">&times;</a>
-				تمت إضافة الخبر
-				<a href="'.$admin_dir.'/'.$this->router->fetch_class().'/add/" class="btn btn-primary btn-xs">إضافة خبر جديدة</a>
+				تمت إضافة الموضوع
+				<a href="'.$admin_dir.'/'.$this->router->fetch_class().'/add/" class="btn btn-primary btn-xs">إضافة موضوع جديدة</a>
 				</div>';
 			}
 			if($updated)
 			{
 				echo '<div class="alert alert-success fade in">
 				<a href="#" data-dismiss="alert" class="close" rel="close">&times;</a>
-				تم تعديل الخبر</div>';
+				تم تعديل الموضوع</div>';
 			}
 			?>
 			<?php if(in_array('title' , $has)){ ?><div class="row">
 				<div class="form-group">
-					<label for="title" class="col-md-3">عنوان الخبر</label>
-					<input type="text" class="form-control col-md-9" name="title" id="title" value="<?php echo $row['title']?>" data-validation="required" data-validation-error-msg="عنوان الخبر" />
+					<label for="title" class="col-md-3">عنوان الموضوع</label>
+					<input type="text" class="form-control col-md-9" name="title" id="title" value="<?php echo $row['title']?>" data-validation="required" data-validation-error-msg="عنوان الموضوع" />
 				</div>
 			</div><?php }?>
 			<?php if(in_array('date' , $has)){ ?><div class="row">
 				<div class="form-group">
-					<label for="news_date" class="col-md-3">تاريخ الخبر </label>
-					<input type="date" class="form-control col-md-9" name="news_date" id="news_date" value="<?php echo $row['news_date']?>" data-validation="required" data-validation-error-msg="تاريخ الخبر" />
+					<label for="news_date" class="col-md-3">تاريخ الموضوع </label>
+					<input type="date" class="form-control col-md-9" name="news_date" id="news_date" value="<?php echo $row['news_date']?>" data-validation="required" data-validation-error-msg="تاريخ الموضوع" />
 				</div>
 			</div><?php }?>
 			<?php if(in_array('pic' , $has)){ ?><div class="row">
 				<div class="form-group">
-					<label for="up" class="col-md-3">صورة الخبر</label>
+					<label for="up" class="col-md-3">صورة الموضوع</label>
 					<input type="file" class="form-control <?php if($row['pic']){ echo "col-md-8";}else{echo 'col-md-9';} ?>" name="up" id="up" />
 					<?php 
 					if($row['pic']) echo '<div class="col-md-1 text-center"><a href="'.base_url().'uploads/'.$this->router->fetch_class().'/'.$row['pic'].'" target="_blank"><img src="'.base_url().'uploads/'.$this->router->fetch_class().'/'.$row['thumbnail'].'" class="img-responsive img-rounded" /></a></div>';?>
@@ -98,7 +98,7 @@ if($edit){
 			</div><?php }?>
 			<?php if(in_array('active' , $has)){ ?><div class="row">
 				<div class="form-group">
-					<label for="active" class="col-md-3">تفعيل الخبر</label>
+					<label for="active" class="col-md-3">تفعيل الموضوع</label>
 					<select class="form-control col-md-9" name="active" id="active">
 						<option value="Y">نعم</option>
 						<option value="N">لا</option>
@@ -107,7 +107,7 @@ if($edit){
 			</div><?php }?>
 			<?php if(in_array('content' , $has)){ ?><div class="row">
 				<div class="form-group">
-					<label for="content" class="col-md-3">تفاصيل الخبر</label>
+					<label for="content" class="col-md-3">تفاصيل الموضوع</label>
 					<div class="col-md-9 no-pad">
 						<textarea 
 							name="content"

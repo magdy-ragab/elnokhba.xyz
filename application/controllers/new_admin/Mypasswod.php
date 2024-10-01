@@ -13,7 +13,7 @@ class Mypasswod extends CI_Controller
 		$this->load->model('core_model');
 		$this->load->model('admin/pages_model');
 		$this->load->library(array('session','form_validation')) ;
-		$this->titles = array('إضافة خبر', 'عرض الأخبار');
+		$this->titles = array('إضافة موضوع', 'عرض المواضيع');
 		$this->cont =$this->router->fetch_class();
 		$this->has =array('title', 'date', 'pic', 'active', 'content');
 		if(! $this->session->userdata('user'))

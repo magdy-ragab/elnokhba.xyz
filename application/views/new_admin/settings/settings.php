@@ -42,7 +42,7 @@
 			</div>
 			<div class="row">
 				<div class="form-group">
-					<label for="news_img" class="col-md-3">صورة الأخبار</label>
+					<label for="news_img" class="col-md-3">صورة المواضيع</label>
 					<div class="col-md-1"><a href="<?php echo base_url() ?>uploads/site/<?php echo $row->news_img ?>"><img src="<?php echo base_url() ?>uploads/site/<?php echo $row->news_img ?>" class="img-responsive" /></a></div>
 					<input type="file" class="form-control col-md-8" name="news_img" id="news_img" />
 				</div>

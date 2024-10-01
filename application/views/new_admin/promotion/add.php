@@ -82,7 +82,7 @@ if(in_array('content' , $has)){
 			?>
 			<?php if(in_array('title' , $has)){ ?><div class="row">
 				<div class="form-group">
-					<label for="title" class="col-md-3">عنوان الخبر</label>
+					<label for="title" class="col-md-3">عنوان الموضوع</label>
 					<input type="text" class="form-control col-md-9" name="title" id="title" value="<?php echo $row['title']?>" data-validation="required" data-validation-error-msg="عنوان الترويج" />
 				</div>
 			</div><?php }?>

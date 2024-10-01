@@ -660,10 +660,10 @@ if (!$this->session->userdata('user')) {
 
 					<?php if ($this->core_model->admin_can('news')) { ?><li<?php if ($cont == 'news') echo ' class="active"'; ?> class="has_sub" data-menuid=<?= ++$menuIndex ?>>
 							<a href="<?php echo base_url() . $this->core_model->admin_dir() ?>/news/view"><span class="glyphicon glyphicon-pushpin"></span>
-								<span class="menu-title d">الأخبار</span> <span class="label label-warning"><?php echo $this->core_model->pages_count(array("module" => 'news')) ?></span></a>
+								<span class="menu-title d">المدونة</span> <span class="label label-warning"><?php echo $this->core_model->pages_count(array("module" => 'news')) ?></span></a>
 							<ul class="subnav">
-								<li><a href="<?php echo base_url() . $this->core_model->admin_dir() ?>/news/add">إضافة خبر</a></li>
-								<li><a href="<?php echo base_url() . $this->core_model->admin_dir() ?>/news/view">عرض الاخبار</a></li>
+								<li><a href="<?php echo base_url() . $this->core_model->admin_dir() ?>/news/add">إضافة موضوع</a></li>
+								<li><a href="<?php echo base_url() . $this->core_model->admin_dir() ?>/news/view">عرض المواضيع</a></li>
 							</ul>
 							</li><?php } ?>
 

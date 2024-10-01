@@ -21,7 +21,7 @@
 		<thead>
 			<tr>
 				<th class="col-xs-1">#</th>
-				<th class="col-xs-7">عنوان الخبر</th>
+				<th class="col-xs-7">عنوان الموضوع</th>
 				<th class="col-xs-2">مرات العرض</th>
 				<th class="col-xs-2">إجراءات</th>
 			</tr>

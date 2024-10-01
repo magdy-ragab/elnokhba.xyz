@@ -399,7 +399,7 @@ class Core_model extends CI_Model
         switch($p)
         {
             case 'news':
-                $out= "الأخبار";
+                $out= "المواضيع";
                 break;
             case 'gallery':
                 $out= "الجاليري";

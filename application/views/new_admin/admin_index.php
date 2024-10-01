@@ -150,7 +150,7 @@ function drawBasic2() {
 
 <div class="row">
 	<div class="col-lg-6 col-xs-12"><?php echo $this->core_model->index_table("pages", "الصفحات", "صفحة") ?></div>
-	<div class="col-lg-6 col-xs-12"><?php echo $this->core_model->index_table("news", "الأخبار", "خبر") ?></div>
+	<div class="col-lg-6 col-xs-12"><?php echo $this->core_model->index_table("news", "المواضيع", "موضوع") ?></div>
 </div>
 
 <div class="row">
