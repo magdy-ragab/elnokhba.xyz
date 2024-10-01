@@ -46,4 +46,7 @@
 		content: ">";
 		margin-right: 5px;
 	}
+	.single-right {
+		font-size: 1.3em;
+	}
 </style>
