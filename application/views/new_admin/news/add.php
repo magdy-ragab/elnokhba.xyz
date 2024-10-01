@@ -112,7 +112,7 @@ if($edit){
 						<textarea 
 							name="content"
 							class="form-control"
-							id="content"><?php echo $row['content']?></textarea>
+							id="summernote"><?php echo $row['content']?></textarea>
 					</div>
 				</div>
 			</div><?php }?>
@@ -123,3 +123,11 @@ if($edit){
 	</div>
 </div>
 <?php form_close();?>
+
+
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote.min.js"></script>
+<script>$(document).ready(function() {
+$('#summernote').summernote();
+});
+</script>

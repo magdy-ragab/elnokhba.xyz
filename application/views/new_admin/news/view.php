@@ -36,10 +36,10 @@
 				<td>
 				<span class="gray glyphicon glyphicon-eye-<?php echo($row->active=='Y')?"open":"close";?>"></span>
 				<a class="gray" href="javascript:;" onclick="$('#input_<?php echo $row->ID?>').slideToggle('fast')"><span class="glyphicon glyphicon-link"></span></a>
-				<a class="gray" href="<?php echo base_url(). $cont .'/'.$row->ID ?>" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+				<a class="gray" href="<?php echo base_url(). 'blog' .'/'.$row->ID ?>" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
 				<b><?php echo $row->title;?></b> 
 				<p><small class="text-muted"><?php echo mb_substr( strip_tags($row->content), 0,50,"utf-8");?></small></p>
-				<p class="myhidden ltr" id="input_<?php echo $row->ID?>"><input type="text" class="form-control" value="<?php echo site_url().$cont.'/'.$row->ID ?>" /></p>
+				<p class="myhidden ltr" id="input_<?php echo $row->ID?>"><input type="text" class="form-control" value="<?php echo site_url().'blog/'.$row->ID ?>" /></p>
 				</td>
 				<td><?php echo $row->view?>
 				</td>

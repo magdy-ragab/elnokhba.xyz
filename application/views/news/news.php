@@ -11,22 +11,39 @@
 			<h1><?=$page['title']?></h1>
 		</div>
 	</div>
-	<img src="<?= $this->shop->shop_img(
-					"uploads/news/{$page['pic']}",
-					"theme/img/bg_cat.jpg"
-				) ?>" class="img-fluid" alt="">
+	<?php if( isset($page['pic']) && $page['pic']) { ?>
+		<img src="<?= $this->shop->shop_img(
+			"uploads/news/{$page['pic']}",
+			"theme/img/bg_cat.jpg"
+		) ?>" class="img-fluid" alt="<?=$page['title']?>">
+	<?php }?>
 </div>
 
 
 <!-- single -->
 
-	<div class="container">
+	<div class="container pb-4">
 	
 		<h2 class="sb-title"><?php echo $page['title'] ?></h2>
 		<div class="single-left">
-			<p>نشر في <span><?php $d= explode(" ",$page['date_create']); echo $this->Hijri->toArabicDateFull($d[0]) ?></span></p>
+			<p class="text-left">نشر في <span><?php $d= explode(" ",$page['date_create']); echo $this->Hijri->toArabicDateFull($d[0]) ?></span></p>
 		</div>
 		<div class="single-right">
 			<p><?php echo nl2br($page['content']); ?></p>
 		</div>
 	</div>
+
+
+<style>
+	.sb-title {
+		font-size: 18pt;
+		font-weight: bold;
+		margin-bottom: 15px;
+		color: #116662;
+	}
+	.breadcrumbs ul li::after {
+		transform: none !important;
+		content: ">";
+		margin-right: 5px;
+	}
+</style>
