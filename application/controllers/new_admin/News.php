@@ -79,7 +79,7 @@ class News extends CI_Controller
 		{
 			$data['titles']= $this->titles;
 			$data['admin_dir']= base_url().$this->core_model->admin_dir();
-			$data['page_title'] = "عرض الاخبار";
+			$data['page_title'] = "عرض المواضيع";
 			$this->load->view( $this->core_model->admin_dir().'/templates/header', $data);
 			$this->load->view( $this->core_model->admin_dir().'/'.$this->cont.'/view', $data);
 			$this->load->view( $this->core_model->admin_dir().'/templates/footer', $data );

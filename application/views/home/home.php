@@ -275,7 +275,7 @@
 		
 		<div class="container margin_60_35">
 			<div class="main_title">
-				<h2>الاخبار</h2>
+				<h2>المواضيع</h2>
 				<span>آخر أخبارنا</span>
 			</div>
 			<div class="row">

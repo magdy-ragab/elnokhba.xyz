@@ -4,7 +4,7 @@
 			<div class="breadcrumbs">
 				<ul>
 					<li><a href="<?= base_url() ?>">الرئيسية</a></li>
-					<li><a href="<?= base_url('news') ?>">الاخبار</a></li>
+					<li><a href="<?= base_url('news') ?>">المواضيع</a></li>
 					<li><?php echo $page['title']?></li>
 				</ul>
 			</div>

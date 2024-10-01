@@ -14,7 +14,7 @@ class News extends CI_Controller {
 	
 	public function index() {
 		$start=0;
-		$data['page_title']= "الاخبار";
+		$data['page_title']= "المواضيع";
         $this->load->view('templates/header',$data);
 		$this->load->view('news/index', $data);
 		$this->load->view('templates/footer', $data);
