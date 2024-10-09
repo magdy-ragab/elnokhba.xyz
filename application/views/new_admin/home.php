@@ -159,13 +159,10 @@
 			<?php echo form_close(); ?>
 			<div class="small text-left horus-footer">
 				Powered by
-				<a href="http://horusxteam.com" target="_blank">
-					<em>horusxteam.com</em>
+				<a href="https://sprintsweb.com/" target="_blank">
+					<em>sprintsweb</em>
 				</a>
 				<span class="text-white">
-					<a href="https://fb.com/horusxteam/" target="_blank">
-						<span class="fa fa-facebook-square"></span>
-					</a>
 					<a href="https://wa.me/+201153200087" target="_blank">
 						<span class="fa fa-whatsapp"></span>
 					</a>

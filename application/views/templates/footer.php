@@ -58,8 +58,8 @@
 			<div class="row add_bottom_25">
 				<div class="col-lg-12 text-center text-white">
 					powered by
-					<a href="//horusxteam.com" target="_blank">
-						<b>horusxteam.com</b>
+					<a href="//sprintsweb.com" target="_blank">
+						<b>sprintsweb</b>
 					</a>
 				</div>
 			</div>
