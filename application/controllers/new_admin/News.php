@@ -139,9 +139,6 @@ class News extends CI_Controller
 					{
 						$config['upload_path']          = './uploads/'.$this->cont.'/';
 						$config['allowed_types']        = 'gif|jpg|png';
-						// $config['max_size']             = 2000;
-						// $config['max_width']            = 2000;
-						// $config['max_height']           = 2000;
 						$config['file_name']			= uniqid();
 						$this->load->library('upload', $config);
 						if ( ! $this->upload->do_upload('up'))
