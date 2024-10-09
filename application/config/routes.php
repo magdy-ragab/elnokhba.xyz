@@ -79,6 +79,7 @@ $route['rss.xml'] = 'rss';
 
 $route['(pages|news|gallery)/([0-9]{1,})'] = '$1/view/$2';
 $route['(blog)/([0-9]{1,})'] = 'news/view/$2';
+$route['blog'] = 'news/index';
 
 
 $route['(categories)'] = 'category/index';

@@ -36,8 +36,8 @@ class News extends CI_Controller {
 			$this->load->view('templates/footer', $data);
 		}else{
 			$data['page']= $page;
-			$data['page_keywords']= str_replace(" ", ",", mb_substr( strip_tags($page['content']), 0, 255,"utf-8")) ;
-			$data['page_description']= mb_substr(strip_tags($page['content']), 0, 255,"utf-8") ;
+			$data['page_keywords']= (isset($page['keywords']) && $page['keywords'])?$page['keywords']:str_replace(" ", ",", mb_substr( strip_tags($page['content']), 0, 255,"utf-8")) ;
+			$data['page_description']= ( isset($page['description']) && $page['description'] )?$page['description']: mb_substr(strip_tags($page['content']), 0, 255,"utf-8") ;
 			$data['page_title']= $page['title'];
 			$data['share_img']= base_url()."uploads/news/". $page['pic'];
 			

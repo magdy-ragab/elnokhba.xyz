@@ -53,7 +53,10 @@ class News extends CI_Controller
 						$pic="";
 						$thumbnail="";
 					}
-					$ret= $this->pages_model->add_pages($title, $content, $news_date,$active,$pic,$thumbnail, $this->cont);
+					$ret= $this->pages_model->add_pages($title, $content, $news_date,$active,$pic,$thumbnail, $this->cont, [
+						'keywords'=> $this->input->post('keywords'),
+						'description'=> $this->input->post('description')
+					]);
 					$data['inserted']=$ret;
 				}
 			}
@@ -163,7 +166,10 @@ class News extends CI_Controller
 	 						unlink("./uploads/'.$this->cont.'/".$row['thumbnail']);
 						}
 					}
-					$this->pages_model->edit_pages($title, $content, $news_date,$active,$pic,$thumbnail, $id);
+					$this->pages_model->edit_pages($title, $content, $news_date,$active,$pic,$thumbnail, $id, [
+						'keywords'=> $this->input->post('keywords'),
+						'description'=> $this->input->post('description')
+					],$this->cont);
 					$data['updated']=true;
 				}else{
 					show_404();

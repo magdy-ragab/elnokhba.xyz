@@ -82,6 +82,21 @@ if($edit){
 					<input type="text" class="form-control col-md-9" name="title" id="title" value="<?php echo $row['title']?>" data-validation="required" data-validation-error-msg="عنوان الموضوع" />
 				</div>
 			</div><?php }?>
+
+
+			<div class="row">
+				<div class="form-group">
+					<label for="keywords" class="col-md-3">كلمات مفتاحية </label>
+					<input type="text" class="form-control col-md-9" name="keywords" id="keywords" value="<?php echo $row['keywords']?>" data-validation="required" data-validation-error-msg="كلمات مفتاحية" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group">
+					<label for="description" class="col-md-3">وصف الموضوع </label>
+					<textarea id="description" name="description" class="form-control col-lg-9" rows="5"><?php echo $row['description']?></textarea>
+				</div>
+			</div>
+
 			<?php if(in_array('date' , $has)){ ?><div class="row">
 				<div class="form-group">
 					<label for="news_date" class="col-md-3">تاريخ الموضوع </label>

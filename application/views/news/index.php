@@ -7,7 +7,7 @@
 					<li><a href="<?= base_url('news') ?>">المواضيع</a></li>
 				</ul>
 			</div>
-			<h1>اﻷخبار</h1>
+			<h1>المدونة</h1>
 		</div>
 	</div>
 	<img src="<?= $this->shop->shop_img(

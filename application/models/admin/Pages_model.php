@@ -4,41 +4,52 @@ class Pages_model extends CI_Model
 
 	public function add_pages($title, $content='', $news_date='0000-00-00', $active='Y', $pic='',$thumbnail='', $module='pages', $meta='', $size='', $ar= array())
 	{
-		/*$url= (preg_replace("/\ /", "-", $title));
-		$query= $this->db->get_where("pages", "`url`='{$url}'");
-		if($query->num_rows()>0)
-		{
-			return false;
-		}else{*/
-			$default_array=array_merge($ar,array("title"=>$title,
-					"content"=>$content,
+		$input=[
+			"title"=>$title,
+			"content"=>$content,
 			"module"=>$module,
-			"meta"=>$meta,
-					"news_date"=>$news_date,"active"=>$active,"pic"=>$pic,"thumbnail"=>$thumbnail, "url"=>$url, "pic_size"=>$size));
-			//print_r($default_array);die();
-			$this->db->insert("pages", $default_array);
-			return $this->db->insert_id();
-		/*}*/
+			"meta"=>(gettype($meta)=='array'?json_encode($meta):$meta),
+			"news_date"=>$news_date,
+			"active"=>$active,
+			"pic"=>$pic,
+			"thumbnail"=>$thumbnail,
+			"url"=>(isset($url)?$url:''),
+			"pic_size"=>$size
+		];
+		if ( isset($meta) && gettype($meta)=='array'  ) {
+			if( isset($meta['keywords'])) $input['keywords'] = $meta['keywords'];
+			if( isset($meta['description'])) $input['description'] = $meta['description'];
+		}
+		$default_array=array_merge($ar,$input);
+		$this->db->insert("pages", $default_array);
+		return $this->db->insert_id();
 	}
 
 
 
 	public function edit_pages($title, $content='', $news_date='0000-00-00', $active='Y', $pic='',$thumbnail='',$id,$ar= array(),$meta='')
 	{
-        $default_array=array_merge($ar,array(
-	    "title"=>$title,
-	    "content"=>$content,
-	    "news_date"=>$news_date,
-	    "active"=>$active,
-	    "pic"=>$pic,
-	    "meta"=>$meta,
-	    "thumbnail"=>$thumbnail,
-	    "url"=>$url
-	    ));
-	$url= (preg_replace("/\ /", "-", $title));
-		    $this->db->where("`ID`='{$id}'");
-		    $this->db->update("pages", $default_array);
-		    return $id;
+		$input=[
+			"title"=>$title,
+			"content"=>$content,
+			"news_date"=>$news_date,
+			"active"=>$active,
+			"pic"=>$pic,
+			"meta"=>(gettype($meta)=='array'?json_encode($meta):$meta),
+			"thumbnail"=>$thumbnail,
+			"url"=>(isset($url)?$url:''),
+		];
+		if ( isset($ar) && gettype($ar)=='array'  ) {
+			if( isset($ar['keywords'])) $input['keywords'] = $ar['keywords'];
+			if( isset($ar['description'])) $input['description'] = $ar['description'];
+		}
+
+		
+        $default_array=array_merge($ar,$input);
+		$this->db->where("`ID`='{$id}'");
+
+		$this->db->update("pages", $default_array);
+		return $id;
 	}
 
 	public function pages_dupliated($title)
